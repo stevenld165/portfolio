@@ -3,12 +3,6 @@ import Footer from '@/components/layout/footer.vue';
 import Nav from '@/components/layout/nav.vue';
 import '../styles/global.css';
 import '../styles/main.css';
-
-interface Props {
-	page: string,
-}
-
-const { page } = Astro.props;
 ---
 
 <!doctype html>
@@ -20,7 +14,7 @@ const { page } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>steven's portfolio</title>
 	</head>
-	<Nav page={page}/>
+	<Nav page="projects"/>
 	<body>
 		<slot />
 	</body>
