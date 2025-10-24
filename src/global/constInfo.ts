@@ -22,6 +22,8 @@ export const PERSONAL_TECHNOLOGIES = [
   "vue",
   "nuxt",
 
+  "astro",
+
   "mysql",
   "postgres",
 
@@ -79,7 +81,6 @@ export const TECHNOLOGIES: Record<string, TechnologyItem> = {
   java: {
     name: "Java",
     iconName: "devicon:java",
-    className: "bg-[#f6ece1]!",
   },
   react: {
     name: "React",
@@ -108,10 +109,103 @@ export const TECHNOLOGIES: Record<string, TechnologyItem> = {
   expressjs: {
     name: "Express.js",
     iconName: "devicon:express",
-    className: "bg-[#f6ece1]!",
   },
   gitlab: {
     name: "GitLab C/I",
     iconName: "devicon:gitlab",
+  },
+
+  angular: {
+    name: "Angular",
+    iconName: "devicon:angular",
+  },
+  astro: {
+    name: "Astro",
+    iconName: "devicon:astro",
+  },
+  bootstrap: {
+    name: "Bootstrap",
+    iconName: "devicon:bootstrap",
+  },
+  cloudflare: {
+    name: "Cloudflare",
+    iconName: "devicon:cloudflare",
+  },
+  html: {
+    name: "HTML 5",
+    iconName: "devicon:html5",
+  },
+  javascript: {
+    name: "JavaScript",
+    iconName: "devicon:javascript",
+  },
+  mongo: {
+    name: "MongoDb",
+    iconName: "devicon:mongo",
+  },
+  mysql: {
+    name: "MySQL",
+
+    iconName: "devicon:mysql",
+  },
+  wordpress: {
+    name: "Wordpress",
+    iconName: "devicon:wordpress",
+  },
+  node: {
+    name: "Node.js",
+    iconName: "devicon:nodejs",
+  },
+  tailwind: {
+    name: "Tailwind CSS",
+    iconName: "devicon:tailwindcss",
+  },
+  figma: {
+    name: "Figma",
+    iconName: "devicon:figma",
+  },
+  firebase: {
+    name: "Firebase",
+    iconName: "devicon:firebase",
+  },
+  markdown: {
+    name: "Markdown",
+    iconName: "devicon:markdown",
+  },
+  php: {
+    name: "PHP",
+    iconName: "devicon:php",
+  },
+  sass: {
+    name: "Sass",
+    iconName: "devicon:sass",
+  },
+  ts: {
+    name: "TypeScript",
+    iconName: "devicon:typescript",
+  },
+  git: {
+    name: "Git",
+    iconName: "devicon:git",
+  },
+  css: {
+    name: "CSS",
+    iconName: "devicon:css3",
+  },
+  vercel: {
+    name: "Vercel",
+    iconName: "devicon:vercel",
+  },
+  netlify: {
+    name: "Netlify",
+    iconName: "devicon:netlify",
+  },
+  deepseek: {
+    name: "DeepSeek",
+    iconName: "devicon:deepseek",
+  },
+  python: {
+    name: "Python",
+    iconName: "devicon:python",
   },
 }

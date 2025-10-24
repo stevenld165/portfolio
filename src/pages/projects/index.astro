@@ -1,0 +1,23 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Intro from '@/components/about/intro.vue'
+import TechnicalDetails from '@/components/about/technicalDetails.vue'
+import Projects from '@/components/about/projects.vue'
+import WorkExperience from '@/components/about/workExperience.vue'
+import Contact from '@/components/about/contact.vue'
+import { getCollection } from 'astro:content'
+import ProjectCard from '@/components/projects/projectCard.vue'
+import ProjectListing from '@/components/projects/projectListing.vue'
+
+const projects = (await getCollection('projects')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+)
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout page="projects">
+  <ProjectListing projects={projects} client:load/>
+		
+</Layout>

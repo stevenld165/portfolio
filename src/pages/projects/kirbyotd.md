@@ -7,6 +7,8 @@ technologies: ["react", "javascript", "expressjs", "postgres"]
 image:
   url: "/images/projects/kirbyotd.jpg"
   alt: "Thumbnail of KirbyOTD app."
+github: "https://github.com/stevenld165/kirbyotd-react"
+url: "https://kirbyotd.netlify.app/"
 ---
 
 _Personal Project_

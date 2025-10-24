@@ -1,5 +1,11 @@
 <script setup lang="ts">
-import BlurReveal from "../ui/blur-reveal/BlurReveal.vue"
+import type { Project } from "../projects/projectCard.vue";
+import ProjectCard from "../projects/projectCard.vue";
+import BlurReveal from "../ui/blur-reveal/BlurReveal.vue";
+
+const props = defineProps<{
+  projects: Project[];
+}>();
 </script>
 <template>
   <div>
@@ -8,9 +14,11 @@ import BlurReveal from "../ui/blur-reveal/BlurReveal.vue"
         <h2 class="text-4xl">
           my <span class="font-bold text-pink-gradient">projects</span>
         </h2>
-        <span class="font-light text-sm">view more...</span>
+        <a class="font-light text-sm" href="/projects">view more...</a>
       </div>
-      <div class="mt-4">project item</div>
+      <div class="mt-4 flex items-center justify-evenly flex-wrap gap-2">
+        <ProjectCard v-for="project in projects" :project="project" is-small />
+      </div>
     </BlurReveal>
   </div>
 </template>

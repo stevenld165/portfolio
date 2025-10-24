@@ -3,6 +3,11 @@
   --dark-color: #301a4b;
   --white-color: #f5f5f5;
   --dark-gradient: linear-gradient(90deg, #301a4b 0%, #4b1a44 100%);
+  --pink-gradient: radial-gradient(
+    88.91% 165.67% at 76.5% 29.12%,
+    #f39a9d 0%,
+    #713db1 100%
+  );
 }
 
 body {
@@ -41,5 +46,12 @@ body {
   background: linear-gradient(var(--white-color), var(--white-color))
       padding-box,
     var(--dark-gradient) border-box;
+  border: 4px solid transparent;
+}
+
+.border-pink-gradient {
+  background: linear-gradient(var(--white-color), var(--white-color))
+      padding-box,
+    var(--pink-gradient) border-box;
   border: 4px solid transparent;
 }
