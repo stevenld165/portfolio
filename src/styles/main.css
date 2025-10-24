@@ -6,7 +6,7 @@
   --pink-gradient: radial-gradient(
     88.91% 165.67% at 76.5% 29.12%,
     #f39a9d 0%,
-    #713db1 100%
+    #9572c0 100%
   );
 }
 
@@ -21,7 +21,7 @@ body {
   background: radial-gradient(
       88.91% 165.67% at 76.5% 29.12%,
       #f39a9d 0%,
-      #713db1 100%
+      #9572c0 100%
     )
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   -webkit-background-clip: text;
@@ -38,7 +38,7 @@ body {
   background: radial-gradient(
     88.91% 165.67% at 76.5% 29.12%,
     #f39a9d 0%,
-    #713db1 100%
+    #9572c0 100%
   );
 }
 

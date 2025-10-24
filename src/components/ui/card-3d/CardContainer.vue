@@ -20,35 +20,40 @@
 </template>
 
 <script setup lang="ts">
-import { useMouseState } from "@/composables/useMouseState";
-import { provide, ref } from "vue";
+import { useMouseState } from "@/composables/useMouseState"
+import { onMounted, provide, ref } from "vue"
 
 defineProps({
   class: String,
   containerClass: String,
-});
+})
 
-const containerRef = ref<HTMLElement | null>(null);
+const containerRef = ref<HTMLElement | null>(null)
 
-const mouseState = useMouseState(); // Use the composable
-provide("use3DCardMouseState", mouseState);
+const mouseState = useMouseState() // Use the composable
+provide("use3DCardMouseState", mouseState)
 
 function handleMouseMove(e: MouseEvent) {
-  if (!containerRef.value) return;
-  const { left, top, width, height } = containerRef.value.getBoundingClientRect();
-  const x = (e.clientX - left - width / 2) / 25;
-  const y = (e.clientY - top - height / 2) / 25;
-  containerRef.value.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
+  if (!containerRef.value) return
+  const { left, top, width, height } =
+    containerRef.value.getBoundingClientRect()
+  const x = (e.clientX - left - width / 2) / 25
+  const y = -(e.clientY - top - height / 2) / 25
+  containerRef.value.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`
 }
 
 function handleMouseEnter() {
-  mouseState.setMouseEntered(true);
+  mouseState.setMouseEntered(true)
 }
 
 function handleMouseLeave() {
-  if (!containerRef.value) return;
+  if (!containerRef.value) return
 
-  mouseState.setMouseEntered(false);
-  containerRef.value.style.transform = `rotateY(0deg) rotateX(0deg)`;
+  mouseState.setMouseEntered(false)
+  containerRef.value.style.transform = `rotateY(-8deg) rotateX(0deg)`
 }
+
+onMounted(() => {
+  containerRef.value.style.transform = `rotateY(-8deg) rotateX(0deg)`
+})
 </script>

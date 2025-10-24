@@ -10,6 +10,8 @@ const data = computed(() =>
     ...item,
   }))
 )
+
+import { marked } from "marked"
 </script>
 <template>
   <div class="">
@@ -39,7 +41,11 @@ const data = computed(() =>
             #[item.id]
           >
             <p class="">
-              {{ item.desc }}
+              <span
+                class="work-experience-desc"
+                v-html="marked.parse(item.desc)"
+              >
+              </span>
             </p>
           </template>
         </Timeline>
@@ -47,4 +53,9 @@ const data = computed(() =>
     </BlurReveal>
   </div>
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss">
+.work-experience-desc ul {
+  list-style: unset;
+  margin-left: 1rem;
+}
+</style>

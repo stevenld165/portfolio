@@ -2,7 +2,7 @@
 import { Icon } from "@iconify/vue"
 import TechnologyDisplay from "../technologies/technologyDisplay.vue"
 import GradientButton from "../ui/gradient-button/GradientButton.vue"
-import { computed } from "vue"
+import { computed, ref } from "vue"
 
 export interface Project {
   id: string
@@ -25,6 +25,8 @@ const props = defineProps<{
   isSmall?: boolean
 }>()
 
+const projDateRef = ref<HTMLElement | null>(null)
+
 const formattedDate = computed(() => {
   const options: Intl.DateTimeFormatOptions = {
     timeZone: "UTC",
@@ -37,11 +39,18 @@ const formattedDate = computed(() => {
 })
 </script>
 <template>
-  <div>
-    <p class="font-bold text-dark-gradient ml-4">{{ formattedDate }}</p>
+  <div
+    ref="projDateRef"
+    @mouseover="projDateRef.style.transform = `translatey(-0.25rem)`"
+    @mouseleave="projDateRef.style.transform = `translatey(0rem)`"
+    class="transition-all duration-200 ease-in-out"
+  >
+    <p class="font-bold text-dark-gradient ml-4">
+      {{ formattedDate }}
+    </p>
     <div
-      class="border-pink-gradient rounded-3xl flex items-center gap-4"
-      :class="isSmall ? 'flex-col max-w-sm p-4' : 'p-6'"
+      class="border-pink-gradient rounded-3xl flex items-center gap-4 flex-col"
+      :class="isSmall ? ' max-w-sm p-4' : ' md:flex-row p-6'"
     >
       <div class="flex-2 flex flex-col items-baseline gap-4">
         <div class="flex items-center gap-2 text-xl font-bold">

@@ -19,7 +19,7 @@ const { frontmatter } = Astro.props;
 	</head>
 	<Nav page="projects"/>
 	<body class="flex flex-col w-full min-h-screen justify-between">
-		<div class="px-64">
+		<div class="px-4 md:px-64">
 			<a href="/projects" class="font-bold text-sm ml-4">back</a>
 			<ProjectPage frontmatter={frontmatter} client:load><slot /></ProjectPage>
 		</div>

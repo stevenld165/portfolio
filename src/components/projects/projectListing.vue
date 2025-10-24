@@ -8,7 +8,7 @@ const props = defineProps<{
 }>()
 </script>
 <template>
-  <div class="px-64 min-h-screen">
+  <div class="px-12 md:px-64 min-h-screen">
     <BlurReveal :delay="0.2" :duration="0.75">
       <h1 class="text-4xl font-bold">
         my <span class="text-pink-gradient">projects</span>

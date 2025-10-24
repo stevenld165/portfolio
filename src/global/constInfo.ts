@@ -56,14 +56,28 @@ export const PERSONAL_WORK_EXPERIENCE: ExperienceItem[] = [
     employer: "Ayoka Systems",
     start: "May 2025",
     end: "Aug 2025",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    desc: `- Worked on multiple projects using a wide range of technologies
+- Debugged and contributed to large, complex .NET Core and .NET Framework based web applications
+- Developed Vue & Nuxt.js based front-end interfaces
+- Spearheaded development of a Claude.ai-powered resume parser and review tool for internal use
+- Engineered GitLab CI/CD pipelines to automate UI testing and development
+`,
   },
   {
     title: "Software Engineering Student",
     employer: "University of Texas at Dallas",
     start: "Sep 2023",
     end: "Present",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    desc: `- Gained hands-on experience across the software engineering lifecycle
+- Completed relavent coursework:
+  - Data Structures & Algorithms
+  - Software Architecture & Design
+  - Software Testing
+  - Requirements Engineering
+  - Database Systems
+  - Object-Oriented Design
+- Collaborated on numerous group projects learning new technologies along the way
+`,
   },
 ]
 
