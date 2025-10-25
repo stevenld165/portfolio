@@ -12,7 +12,7 @@ const projects = await getCollection('projects')
 
 const newestProjects = projects.sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-).slice(0,3)
+).filter((project) => !project.data.hideFromMain).slice(0,3)
 
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build

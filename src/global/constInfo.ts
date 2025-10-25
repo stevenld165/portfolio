@@ -27,6 +27,8 @@ export const PERSONAL_TECHNOLOGIES = [
   "mysql",
   "postgres",
 
+  "docker",
+
   "firebase",
   "supabase",
 
@@ -221,5 +223,9 @@ export const TECHNOLOGIES: Record<string, TechnologyItem> = {
   python: {
     name: "Python",
     iconName: "devicon:python",
+  },
+  docker: {
+    name: "Docker",
+    iconName: "devicon:docker",
   },
 }

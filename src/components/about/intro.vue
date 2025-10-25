@@ -17,7 +17,7 @@ import { PERSONAL_INFO } from "@/global/constInfo"
       </div>
 
       <p class="text-3xl max-w-xl font-light mt-2">
-        a software engineering student at UTD graduating in spring of 2026
+        a software engineering student at UTD
       </p>
       <a :href="PERSONAL_INFO.github" target="_blank" class="inline-block">
         <GradientButton

@@ -3,7 +3,7 @@ layout: /src/layouts/ProjectPageLayout.astro
 title: "KirbyOTD"
 pubDate: 2025-01-01
 description: "A new Kirby copy ability transformation each day!"
-technologies: ["react", "javascript", "expressjs", "postgres"]
+technologies: ["react", "javascript", "expressjs", "postgres", "docker"]
 image:
   url: "/images/projects/kirbyotd.jpg"
   alt: "Thumbnail of KirbyOTD app."
